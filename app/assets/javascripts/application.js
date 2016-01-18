@@ -15,5 +15,13 @@
 //= require turbolinks
 //= require underscore/underscore
 //= require backbone/backbone
+//= require react/react-with-addons.js
+//= require react/react-dom.js
+//= require react_ujs
+//= require reflux/dist/reflux
 //= require_tree .//models
 //= require_tree .//collections
+//= require_tree .//actions
+//= require_tree .//stores
+//= require_tree .//components
+
