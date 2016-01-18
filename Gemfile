@@ -44,4 +44,4 @@ group :development, :test do
 end
 
 gem "bower-rails", "~> 0.10.0"
-
+gem 'react-rails', '1.5.0'
