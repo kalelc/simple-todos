@@ -1,0 +1,8 @@
+{
+  "name": "dsl-generated dependencies",
+  "dependencies": {
+    "react": "0.14.6",
+    "reflux": "0.3.0",
+    "backbone": "1.2.3"
+  }
+}
