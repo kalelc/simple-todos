@@ -1,4 +1,5 @@
-var TodoList = Backbone.Collection.extend({
+var TodoCollection = Backbone.Collection.extend({
+  url: 'api/v1/todos',
   model: Todo,
     done: function() {
       return this.where({done: true});
@@ -12,4 +13,3 @@ var TodoList = Backbone.Collection.extend({
       },
     comparator: 'order'
   });
-var Todos = new TodoList;
