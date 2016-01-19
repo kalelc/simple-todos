@@ -4,4 +4,6 @@ Rails.application.routes.draw do
       resources :todos
     end
   end
+
+  resources :todos
 end
