@@ -1,12 +1,12 @@
 var Todo = Backbone.Model.extend({
+  //urlRoot: '/api/v1/todos',
   defaults: function() {
   return {
     title: "",
-    order: Todos.nextOrder(),
     done: false
     };
   },
   toggle: function() {
     this.save({done: !this.get("done")});
   }
-}
+});
