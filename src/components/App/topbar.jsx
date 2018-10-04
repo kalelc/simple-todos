@@ -23,6 +23,9 @@ export default class Topbar extends Component {
               </div>
             </div>
           </nav>
+          <Route path='/new' component={New} />
+          <Route path='/delete' component={Delete} />
+          <Route path='/about' component={About} />
         </div>
       </Router>
     );
