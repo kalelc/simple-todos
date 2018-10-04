@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch } from 'react-router-dom';
-import { Route } from "react-router";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Topbar from './topbar';
 import New from '../App/new';
