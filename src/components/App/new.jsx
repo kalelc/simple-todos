@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
-import './index.css';
+import {FormControl, FormGroup, ControlLabel} from "react-bootstrap"
 
 export default class New extends Component {
   render() {
     return (
-      <div className="New">
-        <header className="">
-          <h1 className="">New</h1>
-        </header>
-        <p className="">
-          This is new
-        </p>
-      </div>
+      <FormGroup controlId="formControlsTextarea">
+        <FormControl componentClass="textarea" placeholder="textarea" rows="4" cols="50"/>
+      </FormGroup>
     );
   }
 }

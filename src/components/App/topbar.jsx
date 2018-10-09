@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import './index.css';
 
 import {Link } from "react-router-dom";
 
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap"
+import { Link } from "react-router-dom";
 export default class Topbar extends Component {
   render() {
     return (
