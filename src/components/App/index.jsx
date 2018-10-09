@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import { Route } from "react-router";
+import * as actions from '../../actions/index';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 
 import './index.css';
 
@@ -9,7 +12,10 @@ import New from '../App/new';
 import Delete from '../App/delete';
 import About from '../About/index';
 
-export default class Index extends Component {
+export class Index extends Component {
+  componentWillMount(){
+    this.props.fetchTodos();
+  }
   render() {
     return (
       <BrowserRouter>
@@ -25,3 +31,13 @@ export default class Index extends Component {
     );
   }
 }
+
+function mapStateToProps(state) {
+  return state;
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(actions, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Index);
